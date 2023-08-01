@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+*{
+    font-family: "Poppins", sans-serif;
+}
+body{
+    font-weight: 400;
+    font-size: 14px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-title{
+    font-size: 0.9rem;
+}
+.card-body h2{
+    font-weight: 700;
+}
+.card-body div p, .card-title span, .card-text, footer p{
+    opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list{
+    list-style: none;
+}
+.list li{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.footer-li{
+    background-color: #88888893;
+    padding: 7px 15px !important;
+    margin: 0 3px;
+    border-radius: 15px;
+}
+footer a{
+    color: black;
+    opacity: 0.6;
+    text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* nab botton */
+.navbar-toggler {
+    padding: 0;
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none
+}
+/* nav sidebar */
+.offcanvas.offcanvas-end {
+    width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+/* carousel */
+@media screen and (min-width: 1200px) {
+    .carousel-title{
+        font-size: 40px;
+    }
+    .card-body h2{
+        min-height: 3rem;
+    }
 }
+.carousel-title{
+    font-size: 30px;
+}
+.card-img-top {
+    height: 350px;
+}
+@media screen and (min-width: 500px) {
+.card-img-top {
+    height: 550px;
+}}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (min-width: 1000px) {
+    .card-img-top {
+        height: 200px;
+    }
 }

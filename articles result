@@ -1,0 +1,54 @@
+[
+        {
+        "source": {
+            "id": null,
+            "name": "YouTube"
+        },
+        "author": null,
+        "title": "Russia says thwarted Ukraine drone attack in Moscow region | Russia-Ukraine War LIVE | WION Live - WION",
+        "description": null,
+        "url": "https://www.youtube.com/watch?v=JZB5bp1PSSU",
+        "urlToImage": null,
+        "publishedAt": "2023-07-28T05:28:29Z",
+        "content": "Your browser isnt supported anymore. Update it to get the best YouTube experience and our latest features. Learn more\r\nRemind me later"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "CBS Sports"
+        },
+        "author": "",
+        "title": "Bungled opportunities to raid Big 12, passive leadership has Pac-12 on brink with Colorado departing in 2024 - CBS Sports",
+        "description": "The Pac-12 had multiple chances to solidify its membership and grow the conference; instead, it finds itself fighting to stay alive",
+        "url": "https://www.cbssports.com/college-football/news/bungled-opportunities-to-raid-big-12-passive-leadership-has-pac-12-on-brink-with-colorado-departing-in-2024/",
+        "urlToImage": "https://sportshub.cbsistatic.com/i/r/2018/05/15/c270e876-540c-4bd8-a5b8-c1276d0bbc6a/thumbnail/1200x675/7b21486c0f789e1cb099feb1e5ee8472/pac-12-cracks-3.jpg",
+        "publishedAt": "2023-07-28T05:01:00Z",
+        "content": "The Pac-12 school with the best options finally exercised them. Turns out Colorado had the ability, motivation, history and level of impatience to keep this conference realignment train rolling. \r\nCo… [+7947 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Spaceflight Now"
+        },
+        "author": null,
+        "title": "SpaceX breaks launchpad turnaround record with midnight Starlink launch – Spaceflight Now - Spaceflight Now",
+        "description": null,
+        "url": "https://spaceflightnow.com/2023/07/28/live-coverage-spacex-to-launch-another-22-starlink-satellites/",
+        "urlToImage": null,
+        "publishedAt": "2023-07-28T04:41:15Z",
+        "content": "SpaceX’s Falcon 9 rocket careens through the clouds above the pad at Space Launch Complex 40 at Cape Canaveral Space Force Station. This was SpaceX’s 50th orbital launch of the year. Image: Adam Bern… [+3484 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "Cointelegraph"
+        },
+        "author": "Martin Young",
+        "title": "AI researchers say they've found a way to jailbreak Bard and ChatGPT - Cointelegraph",
+        "description": "Carnegie Mellon University and AI center researchers have discovered vulnerabilities in AI chatbots that could be exploited to generate harmful and dangerous content.",
+        "url": "https://cointelegraph.com/news/researchers-claim-method-to-jailbreak-ai-chatbots-llm-chatgpt-bard",
+        "urlToImage": "https://images.cointelegraph.com/images/1200_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDcvMTY0YmI0ZmEtMmU3Ni00Y2NlLTgzZWMtYmQxYjMxOWNjMjg5LmpwZw==.jpg",
+        "publishedAt": "2023-07-28T04:28:57Z",
+        "content": "United States-based researchers have claimed to have found a way to consistently circumvent safety measures from artificial intelligence chatbots such as ChatGPT and Bard to generate harmful content.… [+2286 chars]"
+    }
+]
