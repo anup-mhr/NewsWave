@@ -9,22 +9,17 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 function SearchNews(props) {
     const { apiKey, setProgress, pageSize } = props;
     const location = useLocation();
-    console.log(location.state)
     const searchQuery = location.state.q;
+
     const [page, setPage] = useState(1)
     const [loading, setLoading] = useState(false)
     const [articles, setArticles] = useState([])
     const [totalResults, setTotalResults] = useState()
 
-    const capitalize = (word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1,);
-    }
-
     const updateNews = async () => {
         setLoading(true)
         setProgress(10)
         const url = `https://newsapi.org/v2/everything?q=${searchQuery}&sortBy=popularity&apiKey=${apiKey}&page=${page}&pagesize=${pageSize}`;
-        console.log(url)
         let data = await fetch(url);
         setProgress(50)
         let parsedData = await data.json()
@@ -37,7 +32,6 @@ function SearchNews(props) {
         const url = `https://newsapi.org/v2/everything?q=${searchQuery}&sortBy=popularity&apiKey=${apiKey}&page=${page + 1}&pagesize=${pageSize}`;
         let data = await fetch(url);
         let parsedData = await data.json();
-        console.log(parsedData);
         setArticles(articles.concat(parsedData.articles))
         setLoading(false)
         setTotalResults(parsedData.totalResults)
@@ -45,6 +39,7 @@ function SearchNews(props) {
 
     useEffect(() => {
         updateNews()
+        // eslint-disable-next-line
     }, [searchQuery])
     return (
         <>

@@ -13,7 +13,7 @@ function Homepage(props) {
             <Carousel title="Trending" apiKey={apiKey} loading={loading} setLoading={setLoading} />
             <News apiKey={apiKey} setProgess={props.setProgress} />
             {setProgress(30)}
-            <Carousel title="Most Popular posts" apiKey={apiKey} loading={loading} setLoading={setLoading} />
+            <Carousel title="Most Popular posts" apiKey={apiKey} loading={loading} setLoading={setLoading} category="health"/>
             {setProgress(50)}
             <section className="container pt-5">
                 <div className="row">

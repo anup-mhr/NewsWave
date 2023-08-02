@@ -19,14 +19,12 @@ function News(props) {
         setLoading(true)
         if (location.pathname === "/") {
             const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${page}&pagesize=${pageSize}`;
-            console.log(url)
             let data = await fetch(url);
             let parsedData = await data.json()
             setArticles(parsedData.articles)
         } else {
             setProgress(10)
             const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${page}&pagesize=${pageSize}`;
-            console.log(url)
             let data = await fetch(url);
             setProgress(50)
             let parsedData = await data.json()
@@ -42,7 +40,6 @@ function News(props) {
         const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=${page + 1}&pagesize=${pageSize}`;
         let data = await fetch(url);
         let parsedData = await data.json();
-        console.log(parsedData);
         setArticles(articles.concat(parsedData.articles))
         setLoading(false)
         setTotalResults(parsedData.totalResults)
@@ -50,6 +47,7 @@ function News(props) {
 
     useEffect(() => {
         updateNews()
+        // eslint-disable-next-line
     }, [location.pathname])
 
     const capitalize = (word) => {
@@ -59,7 +57,7 @@ function News(props) {
     return (
         <>
             <InfiniteScroll
-                style={{ width: "90%", margin: "0 auto" }}
+                style={{ width: "90%", margin: "0 auto", overflow:"hidden" }}
                 dataLength={articles.length}
                 next={location.pathname === "/" ? "" : fetchMoreData}
                 hasMore={location.pathname === "/" ? false : articles.length !== totalResults}
