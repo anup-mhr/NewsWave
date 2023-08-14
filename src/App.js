@@ -26,6 +26,7 @@ function App() {
           <Route path="/" key="home" element={<Homepage apiKey={apiKey} setProgress={setProgress} />} />
           <Route path="/business" key="business" element={<News setProgress={setProgress} apiKey={apiKey} category="business" />} />
           <Route path="/entertainment" key="entertainment" element={<News setProgress={setProgress} apiKey={apiKey} category="entertainment" />} />
+          <Route path="/world" key="world" element={<News setProgress={setProgress} apiKey={apiKey} category="world" />} />
           <Route path="/general" key="general" element={<News setProgress={setProgress} apiKey={apiKey} category="general" />} />
           <Route path="/health" key="health" element={<News setProgress={setProgress} apiKey={apiKey} category="health" />} />
           <Route path="/science" key="science" element={<News setProgress={setProgress} apiKey={apiKey} category="science" />} />

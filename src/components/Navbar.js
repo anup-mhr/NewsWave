@@ -52,6 +52,9 @@ function Navbar() {
                                 <Link className={`nav-link ${location.pathname==="/entertainment"?"active":""}`} to="/entertainment">Entertainment</Link>
                             </li>
                             <li className="nav-item">
+                                <Link className={`nav-link ${location.pathname==="/world"?"active":""}`} to="/world">World</Link>
+                            </li>
+                            <li className="nav-item">
                                 <Link className={`nav-link ${location.pathname==="/general"?"active":""}`} to="/general">General</Link>
                             </li>
                             <li className="nav-item">

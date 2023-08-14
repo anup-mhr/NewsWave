@@ -10,7 +10,8 @@ function Homepage(props) {
     return (
         <div>
             {setProgress(10)}
-            <Carousel title="Trending" apiKey={apiKey} loading={loading} setLoading={setLoading} />
+            {/* <Carousel title="Trending" apiKey={apiKey} loading={loading} setLoading={setLoading} /> */}
+            <h2 className="carousel-title text-center mt-5 fw-bold" >Trending</h2>
             <News apiKey={apiKey} setProgess={props.setProgress} />
             {setProgress(30)}
             <Carousel title="Most Popular posts" apiKey={apiKey} loading={loading} setLoading={setLoading} category="health"/>

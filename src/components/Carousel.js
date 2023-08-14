@@ -9,7 +9,7 @@ function Carousel(props) {
 
   const updateNews = async () => {
     setLoading(true)
-    const url = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&page=1&pagesize=${pageSize}`;
+    const url = `https://gnews.io/api/v4/top-headlines?category=${category}&country=${country}&max=${pageSize}&apikey=${apiKey}`
     let data = await fetch(url);
     let parsedData = await data.json();
     setArticles(parsedData.articles)
@@ -29,12 +29,11 @@ function Carousel(props) {
           {loading && <Skeleton height={250} />}
           <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
-              {articles.map((element) => {
+              {articles?.map((element) => {
                 return <Carousel_Item key={element.newsUrl} title={element.title.slice(0, 50)}
                   description={element.description ? element.description.slice(0,) : "Singaporean national Saridewi Djamani, 45, was convicted in 2018 of trafficking over 30 gr"}
-                  imgUrl={element.urlToImage ? element.urlToImage : "https://media.cnn.com/api/v1/images/stellar/prod/230615153348-01-manitoba-highway-collision.jpg?c=16x9&q=w_800,c_fill"}
+                  imgUrl={element.image ? element.image : "https://media.cnn.com/api/v1/images/stellar/prod/230615153348-01-manitoba-highway-collision.jpg?c=16x9&q=w_800,c_fill"}
                   newsUrl={element.url}
-                  author={element.author}
                   date={element.publishedAt}
                   source={element.source.name} />
               })}
